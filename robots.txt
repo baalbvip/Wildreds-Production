@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://wildreds.club/sitemap.xml
+
+Disallow: /groups/view/
