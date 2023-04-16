@@ -1,0 +1,465 @@
+@import url(./fonts.scss);
+
+
+
+:root {
+    --bodyBackground: #1D1E20;
+    --divB: #28292c;
+    --blue-tw: #1d9bf0;
+
+    --color-white: #fff;
+    --color-opacity2: #ffffff7a;
+    --font-size-normal: 14px;
+    --font-size-title: 18px;
+}
+
+$logoWhite: "./../img/icons/logo_white.png";
+$logoDark: "./../img/icons/logo_dark.png";
+$colorButton: #735aff;
+
+body {
+    background: var(--bodyBackground);
+    padding: 0;
+    margin: 0;
+    font-family: "InterLight";
+}
+
+
+.headerIndex {
+    display: flex;
+    width: 100%;
+    background: var(--divB);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.headerIndex .left {
+    width: 80%;
+}
+
+.headerIndex .right {
+    margin-left: auto;
+}
+
+.headerIndex .logo {
+    background: url($logoDark);
+    width: 90px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    position: relative;
+    top: 2px;
+}
+
+.headerIndex button.auth {
+    background: transparent;
+    color: white;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 90px;
+    line-height: 1;
+    font-size: 13.5px;
+    border: 1px solid white;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+
+.info-beta {
+    display: block;
+    max-width: 400px;
+    color: white;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: max-content;
+}
+
+.info-beta p {
+    font-size: 14px;
+}
+
+.info-beta .go {
+    padding: 10px;
+    border-radius: 92px;
+    background: #ffffff00;
+    color: white;
+    border: 1px solid;
+    font-size: 13px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.info-beta .icon {
+    max-width: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+.groups {
+    display: block;
+    position: relative;
+    margin: auto;
+    max-width: 700px;
+    margin-top: 80px;
+}
+
+.group {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: var(--divB);
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+
+.group .miniature {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    border: 0px;
+}
+
+.group .image-controller {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+}
+
+.group .icon {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: -6px;
+    bottom: 0;
+    border: 2px solid #28292c;
+    border-radius: 94px;
+}
+
+
+.group .top .info {
+    display: block;
+    padding-left: 60px;
+    color: white;
+}
+
+.group .top .info .title {
+    display: block;
+    font-family: "InterbOld";
+}
+
+.group .top .info .date {
+    font-size: 14px;
+}
+
+.group .join {
+    display: block;
+    border-radius: 37px;
+    border: 0px;
+    padding: 10px;
+    font-size: 12px;
+    background: var(--blue-tw);
+    color: white;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    height: max-content;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.headerGroups {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+.headerGroups a {
+    padding: 10px;
+    text-align: center;
+    border-radius: 99px;
+    color: white;
+    border: 0;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+.headerGroups .push {
+    display: block;
+    float: right;
+    width: max-content;
+    position: relative;
+    margin-left: auto;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid;
+    height: max-content !important;
+    font-size: 14px;
+}
+
+.headerGroups a.whatsapp {
+    background: #17c75c;
+}
+
+.headerGroups a.discord {
+    background: #5c76eb;
+}
+
+.headerGroups a.telegram {
+    background: #2d9dd1;
+}
+
+.groups .upload .form .miniature {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 91px;
+    border: 1px solid grey;
+    background: url("./../img/icons/default_group.png");
+    background-position: center !important;
+    background-size: cover !important;
+    position: absolute;
+}
+
+.groups .upload .form {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.groups .upload .form .inputs {
+    width: -webkit-fill-available;
+    padding-left: 110px;
+}
+
+.input-form {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-form input {
+    width: 100%;
+    padding: 7px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3607843137);
+    transition: 0.2s linear;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    padding-left: 11px;
+
+    &:focus {
+        border: 2px solid var(--blue-tw);
+    }
+
+    &:active {
+        border: 2px solid var(--blue-tw);
+    }
+}
+
+.groups.uploads {
+    max-width: 600px;
+}
+
+.groups .upload .form .file {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 94px;
+    border: 1px solid var(--bodyBackground);
+    background: var(--bodyBackground);
+    color: white;
+}
+
+.select-buttons {
+    display: inline-flex;
+    gap: 3px;
+    width: max-content;
+}
+
+.select-buttons button {
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    border-radius: 12px;
+    background: var(--divB);
+    color: white;
+    border: 0px;
+}
+
+.groups.uploads span {
+    color: white;
+}
+
+.groups.uploads .span-info {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    display: block;
+    opacity: 0.8;
+}
+
+.groups.uploads .title {
+    color: white;
+    font-family: "InterBold";
+
+}
+
+.groups.uploads {
+    background: var(--divB);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.select-buttons .option .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 90px;
+    border: 1px solid;
+    position: relative;
+    opacity: 0.5;
+    top: 0.4px;
+    transition: .3s linear;
+
+}
+
+
+.select-buttons .option.active .circle {
+    background: var(--blue-tw);
+    border: 1px solid var(--blue-tw);
+    opacity: 1;
+}
+
+.groups.uploads .go {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 26px;
+    margin-left: auto;
+    float: right;
+    background: var(--blue-tw);
+    color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 0px;
+}
+
+.no-found {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.groups.joined .photo {
+    width: 80px;
+    height: 80px;
+    background-position: center !important;
+    position: absolute;
+    border-radius: 92px;
+    background-size: cover !important;
+}
+
+.groups.joined .info {
+    display: block;
+    padding-left: 90px;
+}
+
+
+.groups.joined .info .title {
+    color: var(--color-white);
+    font-size: var(--font-size-title);
+    margin-bottom: 5px;
+}
+
+.groups.joined .info span {
+    color: var(--color-white);
+    font-size: var(--font-size-normal);
+}
+
+.groups.joined .bottom {
+    display: block;
+    margin-left: auto;
+    position: relative;
+    width: max-content;
+}
+
+.groups.joined {
+    padding: 10px;
+    background: var(--divB);
+    border-radius: 12px;
+}
+
+.groups.joined .join img {
+    max-width: 19px;
+    position: relative;
+}
+
+.groups.joined .reglas {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    color: var(--color-opacity2) !important;
+}
+
+
+.groups.joined .join {
+    display: block;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: var(--blue-tw);
+    border-radius: 90px;
+    font-size: var(--font-size-normal);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+
+
+.groups.joined .title .report {
+    color: var(--color-white);
+    margin-left: auto;
+    float: right;
+    padding: 10px;
+    padding-top: 0;
+}
+
+@media screen and (max-width:800px) {
+    .headerGroups{
+        overflow: auto;
+    }
+
+    .headerIndex .right{
+        width: 133%;
+    }
+
+    .select-buttons{
+        max-width: 100%;
+    }
+}
